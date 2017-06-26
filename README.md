@@ -7,4 +7,5 @@ This is the first step on getting together an example which can pass the OAuth T
 
 - https://developer.okta.com/blog/2017/03/21/spring-boot-oauth
 - https://github.com/oktadeveloper/okta-spring-boot-oauth-example
+- http://www.baeldung.com/spring-security-openid-connect
 - https://spring.io/guides/tutorials/spring-boot-oauth2/
