@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.security.Principal;
 import java.util.Map;
 
-/**
- * Created by e23962 on 25/06/2017.
- */
 @RestController
 public class DefaultController {
 
