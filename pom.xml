@@ -5,7 +5,7 @@
 
 	<groupId>com.clarkez</groupId>
 	<artifactId>boot-oauth2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<modules>
 		<module>boot-oauth2-common</module>
 		<module>boot-oauth2-edge</module>

@@ -5,13 +5,13 @@
     <parent>
         <artifactId>boot-oauth2</artifactId>
         <groupId>com.clarkez</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.clarkez.boot-oauth2</groupId>
     <artifactId>boot-oauth2-edge</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
