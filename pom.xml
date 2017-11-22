@@ -6,7 +6,13 @@
 	<groupId>com.clarkez</groupId>
 	<artifactId>boot-oauth2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>boot-oauth2-common</module>
+		<module>boot-oauth2-edge</module>
+		<module>boot-oauth2-service-unauthed</module>
+		<module>boot-oauth2-resource</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>boot-oauth2</name>
 	<description>Demo project for Spring Boot</description>
@@ -25,39 +31,13 @@
 		<spring-cloud.version>Dalston.SR1</spring-cloud.version>
 	</properties>
 
-	<dependencies>
-
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.cloud</groupId>-->
-			<!--<artifactId>spring-cloud-starter-oauth2</artifactId>-->
-		<!--</dependency>-->
-
-		<dependency>
-			<artifactId>spring-security-oauth2</artifactId>
-			<groupId>org.springframework.security.oauth</groupId>
-			<version>2.0.14.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.clarkez</groupId>
+				<artifactId>boot-oauth2-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>

@@ -1,0 +1,27 @@
+# Create a supporting application.properties file
+#sec.oauth.clientid=
+#sec.oauth.clientsecret=
+#sec.oauth.okta.accid=dev-000000
+#sec.oauth.okta.urlanon=
+
+security:
+  oauth2:
+    client:
+      # From OIDC app
+      clientId: ${sec.oauth.clientid}
+      clientSecret: ${sec.oauth.clientsecret}
+      # From Authorization Server's metadata
+      accessTokenUri: https://${sec.oauth.okta.accid}.oktapreview.com/oauth2/${sec.oauth.okta.urlanon}/v1/token
+      userAuthorizationUri: https://${sec.oauth.okta.accid}.oktapreview.com/oauth2/${sec.oauth.okta.urlanon}/v1/authorize
+      clientAuthenticationScheme: form
+      scope: openid profile email offline_access
+    resource:
+      # from your Auth Server's metadata, check .well-known/openid-configuration
+      # if not in .well-known/oauth-authorization-server
+      userInfoUri: https://${sec.oauth.okta.accid}.oktapreview.com/oauth2/${sec.oauth.okta.urlanon}/v1/userinfo
+      preferTokenInfo: false
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web.client: DEBUG

@@ -1,0 +1,8 @@
+server:
+  port: 8085
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://${sec.oauth.okta.accid}.oktapreview.com/oauth2/${sec.oauth.okta.urlanon}/v1/userinfo
+
