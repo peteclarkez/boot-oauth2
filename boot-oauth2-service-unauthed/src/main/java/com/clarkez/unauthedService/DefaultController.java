@@ -14,8 +14,8 @@ public class DefaultController {
     @RequestMapping("/service")
     public ServiceResponse sayHello(){
 
-        String user = "SERVICE_A";
-        ServiceResponse sr = new ServiceResponse(user,"Hello "+user);
+        String servicename = "SERVICE_A";
+        ServiceResponse sr = new ServiceResponse(servicename,"Hello From service "+ servicename + " from Authenticated Service");
 
         return sr;
     }
